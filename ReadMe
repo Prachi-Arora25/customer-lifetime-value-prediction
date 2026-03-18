@@ -1,0 +1,142 @@
+# 💰 Customer Lifetime Value (CLV) Prediction
+
+## 📌 Overview
+Understanding how much value a customer brings over time is crucial for any business.
+
+This project builds a **Customer Lifetime Value (CLV) prediction system** using transactional retail data. It combines **data analysis, machine learning, and customer segmentation** to generate actionable business insights.
+
+---
+
+## 🎯 Objectives
+
+- Analyze customer transaction behavior  
+- Perform **RFM (Recency, Frequency, Monetary) analysis**  
+- Build machine learning models to predict customer spending  
+- Segment customers based on value  
+- Provide data-driven business recommendations  
+
+---
+
+## 📂 Dataset
+
+- Online Retail Dataset (CSV format)
+- Contains customer transactions including:
+  - InvoiceNo
+  - Quantity
+  - UnitPrice
+  - InvoiceDate
+  - CustomerID
+
+---
+
+## ⚙️ Project Workflow
+
+### 1️⃣ Data Preprocessing
+- Handled missing values  
+- Converted date columns  
+- Created **TotalPrice = Quantity × UnitPrice**
+
+---
+
+### 2️⃣ Feature Engineering (RFM Analysis)
+
+- **Recency** → Days since last purchase  
+- **Frequency** → Number of purchases  
+- **Monetary** → Total spending  
+
+Converted transactional data into **customer-level insights**.
+
+---
+
+### 3️⃣ Exploratory Data Analysis
+
+- Customer spending is **highly skewed**  
+- Few customers contribute to most revenue  
+- Presence of extreme outliers  
+
+---
+
+### 4️⃣ Machine Learning Models
+
+| Model | Description |
+|------|------------|
+| Linear Regression | Baseline model |
+| Random Forest Regressor | Non-linear model |
+
+---
+
+### 📊 Model Performance
+
+| Model | MAE | RMSE | R² Score |
+|------|------|------|---------|
+| Linear Regression | 1450.53 | 8202.29 | 0.34 |
+| Random Forest | 1898.30 | 10691.43 | -0.11 |
+
+---
+
+### 🧠 Key Insight
+
+Linear Regression outperformed Random Forest, indicating that:
+
+> Customer spending has a **weak and relatively linear relationship** with available features.
+
+---
+
+### 5️⃣ Customer Segmentation
+
+Customers were segmented using RFM scoring into:
+
+- 🏆 Champions  
+- 💙 Loyal Customers  
+- ⚠️ At Risk  
+- 🔻 Others  
+
+---
+
+## 📈 Business Insights
+
+- A small group of customers drives most revenue  
+- High-value customers should be prioritized for retention  
+- At-risk customers need targeted re-engagement  
+- Opportunities exist to upsell low-value customers  
+
+---
+
+## 🧾 Conclusion
+
+This project demonstrates how data can be used to:
+
+- Understand customer behavior  
+- Predict future value  
+- Improve business decision-making  
+
+It highlights the importance of combining **analytics + machine learning + business thinking**.
+
+---
+
+## 🚀 Future Improvements
+
+- Add more predictive features  
+- Handle outliers more effectively  
+- Try advanced models (XGBoost, Gradient Boosting)  
+- Deploy as a web application  
+
+---
+
+## 🛠️ Tech Stack
+
+- Python 🐍  
+- Pandas  
+- NumPy  
+- Matplotlib  
+- Scikit-learn  
+
+---
+
+## 📎 Author
+
+**Prachi Arora**
+
+---
+
+⭐ If you found this project useful, feel free to star the repo!
